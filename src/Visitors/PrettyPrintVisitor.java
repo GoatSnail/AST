@@ -25,6 +25,6 @@ public class PrettyPrintVisitor extends Visitor {
 
     @Override
     public void Visit(Node n) {
-        System.out.println("Encountered a Node.");
+        System.out.println("Encountered a Node: " + n.toString() + "\n");
     }
 }

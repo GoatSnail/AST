@@ -1,4 +1,16 @@
-import
-package org.AST;
+package SyntaxNodes;
 
-public class BlockNode extends N
+import GeneralNodes.*;
+import Visitors.Visitor;
+
+public class BlockNode extends NaryNode{
+
+    public BlockNode(){
+        super(null); //not finished
+    }
+
+    @Override
+    public Object Visit(Visitor v) {
+        return null;
+    }
+}

@@ -1,8 +1,7 @@
 package SyntaxNodes;
 
-import org.AST.GeneralNodes.BinaryNode;
-import org.AST.GeneralNodes.Node;
-import org.Visitors.Visitor;
+import GeneralNodes.*;
+import Visitors.Visitor;
 
 /**
  * Created by Nete on 09-03-2016.
