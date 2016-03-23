@@ -3,9 +3,9 @@ package SyntaxNodes;
 import GeneralNodes.*;
 import Visitors.Visitor;
 
-public class ValueNode extends LeafNode{
+public class NumLit extends LeafNode{
 	private String _value;
-	public ValueNode(String val){
+	public NumLit(String val){
 		this._value = val;
 	}
 
