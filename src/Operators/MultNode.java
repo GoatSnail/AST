@@ -1,4 +1,4 @@
-package SyntaxNodes;
+package Operators;
 
 import GeneralNodes.*;
 import Visitors.Visitor;

@@ -7,6 +7,7 @@ import Visitors.Visitor;
  */
 public abstract class BinaryNode extends Node {
     protected Node rightChild;
+    protected Type t;
 
     public Node GetRightChild()
     {

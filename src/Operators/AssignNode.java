@@ -1,6 +1,7 @@
-package SyntaxNodes;
+package Operators;
 
 import GeneralNodes.*;
+import SyntaxNodes.IDNode;
 import Visitors.Visitor;
 
 public class AssignNode extends BinaryNode{

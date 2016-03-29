@@ -1,12 +1,19 @@
-package SyntaxNodes;
+package Operators;
 
 import GeneralNodes.*;
+import Type.Num;
+import Type.*;
 import Visitors.Visitor;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 /**
  * Created by Nete on 09-03-2016.
  */
 public class PlusNode extends BinaryNode {
+    private Type t;
+
     public PlusNode(Node left, Node right)
     {
         super(left, right);
@@ -14,6 +21,6 @@ public class PlusNode extends BinaryNode {
 
     @Override
     public Object Visit(Visitor v) {
-        return v.Visit(this);
+        v.Visit(this);
     }
 }

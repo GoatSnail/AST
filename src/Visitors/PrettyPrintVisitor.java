@@ -1,7 +1,7 @@
 package Visitors;
 
 import GeneralNodes.Node;
-import SyntaxNodes.PlusNode;
+import Operators.PlusNode;
 
 /**
  * Created by Nete on 09-03-2016.

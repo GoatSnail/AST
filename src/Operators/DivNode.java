@@ -1,11 +1,12 @@
-package SyntaxNodes;
+package Operators;
 
 import GeneralNodes.*;
 import Visitors.Visitor;
 
-public class MinusNode extends BinaryNode{
-	public MinusNode(Node left, Node right){
+public class DivNode extends BinaryNode{
+	public DivNode(Node left, Node right){
 		super(left,right);
+
 	}
 
 	@Override

@@ -1,4 +1,4 @@
-package SyntaxNodes;
+package Declarations;
 
 import GeneralNodes.LeafNode;
 import Visitors.Visitor;
@@ -10,6 +10,7 @@ public class NumDcl extends LeafNode{
     String _id;
     public NumDcl(String val){
         this._id = val;
+        t = Type.num;
     }
 
     @Override
