@@ -12,17 +12,15 @@ public abstract class NaryNode extends Node {
 
     public NaryNode(ArrayList<Node> childNodes)
     {
-        //childNodes must be ordered in left to right appearance in tree
-        this._leftmostChild = childNodes.get(0);
-
         for (int i = 0; i < childNodes.size(); i++) {
             Node n = childNodes.get(i);
             n._parent = this;
         }
 
-        if(this._leftmostChild != null)
-            System.out.println("In outer if.");
-            if (this._leftmostChild instanceof ExpressionNode)
-                System.out.println("Left child is plus");
+        //childNodes must be ordered in left to right appearance in tree
+        this._leftmostChild = childNodes.get(0);
+
+        childNodes.remove(0);
+        this.children = childNodes;
     }
 }

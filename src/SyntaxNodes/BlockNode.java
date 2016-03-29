@@ -3,10 +3,13 @@ package SyntaxNodes;
 import GeneralNodes.*;
 import Visitors.Visitor;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BlockNode extends NaryNode{
 
-    public BlockNode(){
-        super(null); //not finished
+    public BlockNode(ArrayList<Node> stmts){
+        super(stmts);
     }
 
     @Override

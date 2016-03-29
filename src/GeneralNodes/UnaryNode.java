@@ -7,5 +7,6 @@ public abstract class UnaryNode extends Node {
     public UnaryNode (Node child)
     {
         this._leftmostChild = child;
+        child._parent = this;
     }
 }

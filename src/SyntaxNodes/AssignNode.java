@@ -4,7 +4,7 @@ import GeneralNodes.*;
 import Visitors.Visitor;
 
 public class AssignNode extends BinaryNode{
-	public AssignNode(IDNode id, ExpressionNode expr){
+	public AssignNode(IDNode id, Node expr){
 		super(id,expr);
 	}
 
