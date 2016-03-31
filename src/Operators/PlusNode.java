@@ -1,8 +1,6 @@
 package Operators;
 
 import GeneralNodes.*;
-import Type.Num;
-import Type.*;
 import Visitors.Visitor;
 
 import java.lang.reflect.InvocationTargetException;
@@ -22,5 +20,7 @@ public class PlusNode extends BinaryNode {
     @Override
     public Object Visit(Visitor v) {
         v.Visit(this);
+
+        return null;
     }
 }

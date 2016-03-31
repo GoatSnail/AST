@@ -1,6 +1,8 @@
 package Visitors;
 
 import GeneralNodes.Node;
+import Operators.AndNode;
+import Operators.AssignNode;
 import Operators.PlusNode;
 
 /**
@@ -26,5 +28,15 @@ public class PrettyPrintVisitor extends Visitor {
     @Override
     public void Visit(Node n) {
         System.out.println("Encountered a Node: " + n.toString() + "\n");
+    }
+
+    @Override
+    public void Visit(AndNode n) {
+
+    }
+
+    @Override
+    public void Visit(AssignNode n) {
+
     }
 }
